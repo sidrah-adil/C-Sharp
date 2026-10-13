@@ -1,0 +1,98 @@
+ // See information http://aka.ms/new-console-template for more
+ // information
+            Console.WriteLine("Hello, World!");
+
+//DATA-TYPE
+//string
+//string userName = "Sara";
+//char bloodGroup= 'A';
+
+//Console.WriteLine(userName + " " + bloodGroup);
+
+//numbers
+
+//int qaidiNo = 804;
+
+//long largeNum = 1234570255974582L;
+
+//float height = 5.11F;
+
+//double dNum = 990.788D;
+
+//decimal deceNum = 1573220.0564M;
+
+//boolean
+
+
+
+bool isValid= false;
+
+//Arithematic Operator
+//Console.WriteLine(66 + 45 );
+//Console.WriteLine(66 - 45);
+//Console.WriteLine(66 * 45);
+//Console.WriteLine(66 / 45);
+//Console.WriteLine(66 % 45);
+
+Console.Write(" ");
+//Assignment Operator
+int num = 12;
+
+//Console.WriteLine(num +=4); //num + 4
+//Console.WriteLine(num -=4); //num - 4
+//Console.WriteLine(num *=4); //num * 4
+//Console.WriteLine(num /=4); //num / 4
+//Console.WriteLine(num %=4); //num % 4
+
+// Comparison Operators
+
+int a = 45; int b = 70;
+
+//Console.WriteLine(a == b);
+//Console.WriteLine(a != b);
+//Console.WriteLine(a >= b);
+//Console.WriteLine(a <= b);
+//Console.WriteLine(a < b);
+//Console.WriteLine(a > b);
+
+//Logical Operators (AND &&, OR ||, NOT ! )
+// AND 
+// T + T = T
+// T + F = F
+// F + T = F
+// F + F = F
+
+//Console.WriteLine(a <= b && a != b); //T
+//Console.WriteLine(a >= b && a != b); //F
+
+//OR
+// T + T = T
+// T + F = T
+// F + T = T
+// F + F = F
+
+//Console.WriteLine(a <= b || a != b); //T
+//Console.WriteLine(a >= b || a != b); //T
+//Console.WriteLine(a >= b || a == b); //F
+
+// NOT !
+
+//Console.WriteLine(a != b); //T
+//Console.WriteLine(!(a == b)); //T
+//Console.WriteLine(!(a != b)); //F
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
