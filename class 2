@@ -1,0 +1,76 @@
+
+//SALARY SYSTEM
+//do
+//{
+//    Console.WriteLine("Enter salary...");
+
+//    int salary = int.Parse(Console.ReadLine());
+
+//    Console.WriteLine(salary);
+
+//    if (salary > 90000 && !(salary >= 120000))
+//    {
+//        Console.WriteLine("Good Salaray....");
+//    }
+//    else if (salary < 90000)
+//    {
+//        Console.WriteLine("Do you get fuel allowance ?");
+//        string answer = Console.ReadLine();
+
+//        answer = answer.ToLower();
+
+//        if (answer == "yes" || answer == "y")
+//        {
+//            Console.WriteLine("Sounds Good");
+//        }
+//        else if (answer == "no" || answer == "n")
+//        {
+//            Console.WriteLine("Try to switch your job");
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter yes or no");
+//        }
+//    }
+//    else
+//    {
+//        Console.WriteLine("Mashallah!");
+//    }
+//} while (true);
+
+
+// SWITCH 1 = 7 // Monday == 1, Tuesday == 2
+
+Console.WriteLine("Enter you Num");
+int num = Int32.Parse(Console.ReadLine());
+
+switch (num)
+{
+    case 1:
+        Console.WriteLine("Monday");
+        break;
+    case 2:
+        Console.WriteLine("Tuesday");
+        break;
+    case 3:
+        Console.WriteLine("Wednesday");
+        break;
+    case 4:
+        Console.WriteLine("Thursday");
+        break;
+    case 5:
+        Console.WriteLine("Friday");
+        break;
+    case 6:
+        Console.WriteLine("Saturday");
+        break;
+    case 7:
+        Console.WriteLine("Sunday");
+        break;
+    default:
+        Console.WriteLine("Invalid Num");
+        break;
+}
+
+
+
