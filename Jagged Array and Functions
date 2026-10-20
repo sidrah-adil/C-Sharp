@@ -1,0 +1,127 @@
+// 20-OCT-2026 TUESDAY
+
+
+// Multi-Dimentional Arrays
+
+//int[,] multiArr =
+//{
+//    {56, 32 },
+//    {78, 46 },
+//    {22, 58 },
+//    {10, 98 },
+//    {54, 89 },
+//    {42, 39 },
+//    {70, 87 },
+//    {27, 44 },
+//};
+
+//Console.WriteLine(multiArr[5,0]);
+
+//for (int i = 0; i < multiArr.GetLength(0); i++)
+//{
+//    for (int j = 0; j < multiArr.GetLength(1); j++)
+//    {
+//        Console.WriteLine(multiArr[i, j] + " ");
+//    }
+//}
+
+//C# Unintialized Variable bool = true, int = 0, str = 0 null by default
+
+//Math.power
+
+//Console.WriteLine(Math.Pow(2, 3));
+
+//Jagged Array
+//size of sub array is not fixed
+
+//string[][] skillSet =
+//{
+//    new string[6] {"HTML", "CSS", "JS", "BOOTSTRAP", "SEO", "UIUX"},
+//    new string[5] {"MYSQL", "PHP", "LARAVEL", "CMS", "FME"},
+//    new string[4]  {"SQL SERVER", "C#", "DOTNET", "Angular"},
+//    new string[3]  {"MongoDB", "ReactJS", "EXPRESSJS"},
+//    new string[2] {"DART", "FLUTTER" }
+//};
+
+//Console.WriteLine(skillSet[2][1]);
+
+// FOR EACH LOOP
+//foreach (var skills in skillSet)
+//{
+//    foreach(var skill in skills)
+//    {
+//        Console.WriteLine(skill);
+//    }
+//}
+
+//FOR LOOP
+//for(int i = 0; i < skillSet.Length; i++)
+//{
+//    for(int j = 0; j < skillSet[i].Length; j++)
+//    {
+//        Console.WriteLine(skillSet[i][j]);
+//    }
+//}
+
+
+//FUNCTIONS IN C#
+// REPEATED WORK CALL K LEYE ,
+// RETURN TYPE, funcName()  {body}
+
+//no return no parameter
+//void Greet()
+//{
+//    Console.WriteLine("Good Afternoon");
+//}
+
+//calling
+//Greet();
+
+
+//no return with parameter
+//void Greet(string name)
+//{
+//    Console.WriteLine($"Hi, {name}, Good Afternoon!");
+//}
+
+//calling
+//Greet("Saqib");
+//Greet("Ahmed");
+
+// Return no parameter
+
+//string Greet()
+//{
+//    return "Welcome to our Company!";
+//}
+
+////calling
+//Console.WriteLine(Greet());
+
+
+// Return with parameter
+//string Greet(string name)
+//{
+//    return $"Welcome, {name} to our Company!";
+//}
+
+////calling
+//Console.WriteLine(Greet("Imran"));
+
+
+//return no paramter
+
+//int Add()
+//{
+//    return 32 + 52;
+//}
+//Console.WriteLine(Add());
+
+//return with paramter
+
+//string empDetails(string name, byte age)
+//{
+//    return ($"Employee name:, {name}. \nEmployee age: {age}");
+//}
+
+//Console.WriteLine(empDetails("Imran", 20));
