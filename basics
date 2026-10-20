@@ -1,6 +1,8 @@
- // See information http://aka.ms/new-console-template for more
- // information
-            Console.WriteLine("Hello, World!");
+// See information http://aka.ms/new-console-template for more
+// information
+using System.ComponentModel.DataAnnotations;
+
+Console.WriteLine("Hello, World!");
 
 //DATA-TYPE
 //string
@@ -25,7 +27,7 @@
 
 
 
-bool isValid= false;
+//bool isValid= false;
 
 //Arithematic Operator
 //Console.WriteLine(66 + 45 );
@@ -34,9 +36,9 @@ bool isValid= false;
 //Console.WriteLine(66 / 45);
 //Console.WriteLine(66 % 45);
 
-Console.Write(" ");
-//Assignment Operator
-int num = 12;
+//Console.Write(" ");
+////Assignment Operator
+//int num = 12;
 
 //Console.WriteLine(num +=4); //num + 4
 //Console.WriteLine(num -=4); //num - 4
@@ -46,7 +48,7 @@ int num = 12;
 
 // Comparison Operators
 
-int a = 45; int b = 70;
+//int a = 45; int b = 70;
 
 //Console.WriteLine(a == b);
 //Console.WriteLine(a != b);
@@ -82,17 +84,316 @@ int a = 45; int b = 70;
 //Console.WriteLine(!(a != b)); //F
 
 
+//SALARY SYSTEM
+//do
+//{
+//    Console.WriteLine("Enter salary...");
+
+//    int salary = int.Parse(Console.ReadLine());
+
+//    Console.WriteLine(salary);
+
+//    if (salary > 90000 && !(salary >= 120000))
+//    {
+//        Console.WriteLine("Good Salaray....");
+//    }
+//    else if (salary < 90000)
+//    {
+//        Console.WriteLine("Do you get fuel allowance ?");
+//        string answer = Console.ReadLine();
+
+//        answer = answer.ToLower();
+
+//        if (answer == "yes" || answer == "y")
+//        {
+//            Console.WriteLine("Sounds Good");
+//        }
+//        else if (answer == "no" || answer == "n")
+//        {
+//            Console.WriteLine("Try to switch your job");
+//        }
+//        else
+//        {
+//            Console.WriteLine("Please enter yes or no");
+//        }
+//    }
+//    else
+//    {
+//        Console.WriteLine("Mashallah!");
+//    }
+//} while (true);
 
 
+// SWITCH 1 = 7 // Monday == 1, Tuesday == 2
+
+//Console.WriteLine("Enter you Num");
+//int num = Int32.Parse(Console.ReadLine());
+
+//switch (num)
+//{
+//    case 1:
+//        Console.WriteLine("Monday");
+//        break;
+//    case 2:
+//        Console.WriteLine("Tuesday");
+//        break;
+//    case 3:
+//        Console.WriteLine("Wednesday");
+//        break;
+//    case 4:
+//        Console.WriteLine("Thursday");
+//        break;
+//    case 5:
+//        Console.WriteLine("Friday");
+//        break;
+//    case 6:
+//        Console.WriteLine("Saturday");
+//        break;
+//    case 7:
+//        Console.WriteLine("Sunday");
+//        break;
+//    default:
+//        Console.WriteLine("Invalid Num");
+//        break;
+//}
 
 
+// String Interpolation
+
+//int twentythree = 23;
+
+//Console.WriteLine($"Ahsan age is{twentythree}");
+
+////For Loop
+
+//for ( int i = 0; i <= twentythree; i++)
+//{
+//    Console.WriteLine(i);
+//}
+
+//for( int i = 50; i >= 0; i--)
+//{
+//    Console.WriteLine(i);
+//}
+
+//ODD NUMBER
+
+//for (int i = 1; i <= 101; i++)
+//{
+//    if(i%2 != 0)
+//    {
+//        Console.WriteLine(i);
+//    }
+//}
+
+//EVEN NUMBER
+
+//for (int i = 1; i <= 101; i++)
+//{
+//    if (i % 2 == 0)
+//    {
+//        Console.WriteLine(i);
+//    }
+//}
 
 
+//While Loop
+//while (twentythree < 25)
+//{
+//    Console.WriteLine(twentythree);
+//    twentythree++;
+//}
 
 
+//Do-While Loop
+//int j = 10;
+
+//do {  Console.WriteLine("J");
+//    j++;
+//}
+//while (j < 23);
 
 
+// Even number
+//int num;
+//char ans;
+
+//do
+//{
+//    Console.WriteLine("Enter your Number");
+//    num = Convert.ToInt32(Console.ReadLine());
+
+//    if (num % 2 == 0)
+//    {
+//        Console.WriteLine("Even Number");
+//    }
+//    else{
+//        Console.WriteLine("Odd Number");
+//    }
+
+//    Console.WriteLine("Do you want to continue? Press Y");
+//    ans = Convert.ToChar(Console.ReadLine());
+//}while (ans == 'Y' || ans == 'y');
 
 
+// ARRAY FIXED SIZE
+
+//int[] tempreature = new int[6];
+//tempreature[0] = 20;
+//tempreature[1] = 35;
+//tempreature[2] = 40;
+//tempreature[3] = 25;
+//tempreature[4] = 32;
+//tempreature[5] = 16;
+
+//Console.WriteLine(tempreature[3]);
+
+//int[] itemPrice = [460, 885, 1150, 225, 550, 800, 750, 900];
+
+//foreach (var item in itemPrice)
+//{
+//    Console.WriteLine(item);
+//}
+
+// ARRAY METHOD
+
+//string[] countries = ["Pak", "China", "Bag", "Iran", "Afg"];
+
+//Array.Sort(countries);
+//Array.Reverse(countries);
+
+//foreach (var country in countries)
+//{
+//    Console.WriteLine(country);
+//}
+//Console.WriteLine(Array.IndexOf(countries, "China"));
+//Console.WriteLine(Array.LastIndexOf(countries, "Pak"));
 
 
+// 20-OCT-2026 TUESDAY
+
+
+// Multi-Dimentional Arrays
+
+//int[,] multiArr =
+//{
+//    {56, 32 },
+//    {78, 46 },
+//    {22, 58 },
+//    {10, 98 },
+//    {54, 89 },
+//    {42, 39 },
+//    {70, 87 },
+//    {27, 44 },
+//};
+
+//Console.WriteLine(multiArr[5,0]);
+
+//for (int i = 0; i < multiArr.GetLength(0); i++)
+//{
+//    for (int j = 0; j < multiArr.GetLength(1); j++)
+//    {
+//        Console.WriteLine(multiArr[i, j] + " ");
+//    }
+//}
+
+//C# Unintialized Variable bool = true, int = 0, str = 0 null by default
+
+//Math.power
+
+//Console.WriteLine(Math.Pow(2, 3));
+
+//Jagged Array
+//size of sub array is not fixed
+
+//string[][] skillSet =
+//{
+//    new string[6] {"HTML", "CSS", "JS", "BOOTSTRAP", "SEO", "UIUX"},
+//    new string[5] {"MYSQL", "PHP", "LARAVEL", "CMS", "FME"},
+//    new string[4]  {"SQL SERVER", "C#", "DOTNET", "Angular"},
+//    new string[3]  {"MongoDB", "ReactJS", "EXPRESSJS"},
+//    new string[2] {"DART", "FLUTTER" }
+//};
+
+//Console.WriteLine(skillSet[2][1]);
+
+// FOR EACH LOOP
+//foreach (var skills in skillSet)
+//{
+//    foreach(var skill in skills)
+//    {
+//        Console.WriteLine(skill);
+//    }
+//}
+
+//FOR LOOP
+//for(int i = 0; i < skillSet.Length; i++)
+//{
+//    for(int j = 0; j < skillSet[i].Length; j++)
+//    {
+//        Console.WriteLine(skillSet[i][j]);
+//    }
+//}
+
+
+//FUNCTIONS IN C#
+// REPEATED WORK CALL K LEYE ,
+// RETURN TYPE, funcName()  {body}
+
+//no return no parameter
+//void Greet()
+//{
+//    Console.WriteLine("Good Afternoon");
+//}
+
+//calling
+//Greet();
+
+
+//no return with parameter
+//void Greet(string name)
+//{
+//    Console.WriteLine($"Hi, {name}, Good Afternoon!");
+//}
+
+//calling
+//Greet("Saqib");
+//Greet("Ahmed");
+
+// Return no parameter
+
+//string Greet()
+//{
+//    return "Welcome to our Company!";
+//}
+
+////calling
+//Console.WriteLine(Greet());
+
+
+// Return with parameter
+//string Greet(string name)
+//{
+//    return $"Welcome, {name} to our Company!";
+//}
+
+////calling
+//Console.WriteLine(Greet("Imran"));
+
+
+//return no paramter
+
+//int Add()
+//{
+//    return 32 + 52;
+//}
+//Console.WriteLine(Add());
+
+//return with paramter
+
+//string empDetails(string name, byte age)
+//{
+//    return ($"Employee name:, {name}. \nEmployee age: {age}");
+//}
+
+//Console.WriteLine(empDetails("Imran", 20));
