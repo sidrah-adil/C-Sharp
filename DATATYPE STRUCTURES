@@ -1,0 +1,26 @@
+
+// DATATYPE STRUCTURES
+// COLLECTIONS
+
+//GENERIC COLLECTION = datatype zaror btani parti hai | Fixed DataType
+
+//LIST, STACK, QUEUE, Dictionary
+
+//LIST: ADD, REMOVE, Contains, AddRange, RemoveRange
+
+List<string> Cars = new List<string>();
+Cars.Add("Accord");
+Cars.Add("City");
+Cars.Add("Civic");
+Cars.Add("Corolla");
+Cars.Add("Cultus");
+
+Console.WriteLine(Cars[4]);
+Console.WriteLine(Cars.Count);
+Console.WriteLine(Cars.Contains("Civic"));
+Console.WriteLine(Cars.Remove("Cultus"));
+
+foreach (string Car in Cars)
+{
+    Console.WriteLine(Car);
+}
