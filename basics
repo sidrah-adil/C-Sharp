@@ -1,5 +1,6 @@
 // See information http://aka.ms/new-console-template for more
 // information
+using System.Collections;
 using System.ComponentModel.DataAnnotations;
 
 Console.WriteLine("Hello, World!");
@@ -397,3 +398,150 @@ Console.WriteLine("Hello, World!");
 //}
 
 //Console.WriteLine(empDetails("Imran", 20));
+
+// DATATYPE STRUCTURES
+// COLLECTIONS
+
+//GENERIC COLLECTION = datatype zaror btani parti hai | Fixed DataType
+
+//LIST, STACK, QUEUE, Dictionary
+
+//LIST: ADD, AddRange, Contains,
+//Remove, RemoveRange, Count, 
+
+//List<string> SuperCars = new List<string>();
+//SuperCars.Add("Supra");
+//SuperCars.Add("Mark X");
+//SuperCars.Add("BMW");
+//SuperCars.Add("Audi");
+
+//List<string> Cars = new List<string>();
+//Cars.Add("Accord");
+//Cars.Add("City");
+//Cars.Add("Civic");
+//Cars.Add("Corolla");
+//Cars.Add("Cultus");
+
+//Console.WriteLine(Cars[4]);
+//Console.WriteLine(Cars.Count);
+//Console.WriteLine(Cars.Contains("Civic"));
+//Console.WriteLine(Cars.Remove("Cultus"));
+
+//Cars.RemoveAt(0);
+//Cars.Insert(3, "Boss");
+//Cars.AddRange(SuperCars);
+//Cars.RemoveRange(1, 5);
+
+
+//foreach (string Car in Cars)
+//{
+//    Console.WriteLine(Car);
+//}
+
+
+// QUEUE (FIFO: First in first out)
+// ENQUEUE : Add / Insert 
+
+//Queue<string> stdNames = new Queue<string>();
+//stdNames.Enqueue("Imran");
+//stdNames.Enqueue("Hunzila");
+//stdNames.Enqueue("Saqib");
+//stdNames.Enqueue("Ahmed");
+//stdNames.Enqueue("Rayyan");
+//stdNames.Enqueue("Ali");
+//stdNames.Enqueue("Nabeel");
+
+//// DEQUEUE: Remove / Delete
+//stdNames.Dequeue(); // delete 1 name Imran
+//stdNames.Dequeue(); // Hunzila
+
+//foreach (var name in stdNames)
+//{
+//    Console.WriteLine(name);
+//}
+
+// STACK (LIFO: Last in first out)
+// PUSH : Add / Insert 
+
+//Stack<string> birds = new Stack<string>();
+//birds.Push("Electus");
+//birds.Push("Amazon");
+//birds.Push("Finch");
+//birds.Push("Maccow");
+//birds.Push("Love Birds");
+
+
+//// POP: Remove / Delete
+//birds.Pop();// Love birds delete
+
+//foreach (var name in birds)
+//{
+//    Console.WriteLine(name);
+//}
+
+// Dictionary(key: value)
+//add, remove
+
+//Dictionary<string, string> empDetails = new Dictionary
+//<string, string>();
+
+//empDetails.Add("empName", "Haris");
+//empDetails.Add("empDesignation", "DCAH");
+//empDetails.Add("empAddress", "Johar Khi");
+//empDetails.Add("empImg", "haris.jpg");
+//empDetails.Add("empEmail", "haris@aptechnorth.edu.pk");
+//empDetails.Add("empPass", "Haris7778");
+
+//Console.WriteLine(empDetails["empImg"]);
+
+//short code see data 
+//foreach(var item in empDetails)
+//{
+//    Console.WriteLine(item.Key + " : " + item.Value);
+//}
+
+// Long procees show data
+//foreach (var item in empDetails)
+//{
+//    string[] test = (item.ToString().Split(','));
+
+//    string key = test[0].Trim('[');
+//    string value = test[1].Trim(']');
+//    //string key = test[0];
+//    //string value = test[1];
+
+//    Console.WriteLine(key);
+//    Console.WriteLine(value);
+//    Console.WriteLine(item);
+
+//    Console.WriteLine($"The employee has key property: {key} and value property: {value}");
+//}
+
+//Dictionary<string, int> subDetails = new Dictionary
+//<string, int>();
+
+//subDetails.Add("Urdu", 90);
+//subDetails.Add("English", 75);
+//subDetails.Add("Maths", 88);
+//subDetails.Add("Science", 66);
+
+//foreach (var book in subDetails)
+//{
+//    Console.WriteLine(book.Key + " : " + book.Value);
+//}
+
+
+// HashTables
+
+Hashtable students = new Hashtable();
+students.Add("stdName", "Imran");
+students.Add("stdMarks", 89);
+students.Add("stdExamStatus", "Pass");
+students.Add("stdImg", "imran.jpg");
+students.Add("stdValid", true);
+
+Console.WriteLine(students["stdName"]);
+
+
+
+
