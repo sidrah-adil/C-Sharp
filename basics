@@ -540,8 +540,68 @@ students.Add("stdExamStatus", "Pass");
 students.Add("stdImg", "imran.jpg");
 students.Add("stdValid", true);
 
-Console.WriteLine(students["stdName"]);
+//Console.WriteLine(students["stdName"]);
+//Console.WriteLine(students.Contains("stdMarks"));
+//Console.WriteLine(students.ContainsValue(89));
 
+//foreach (DictionaryEntry student in students)
+//{
+//    Console.WriteLine(student.Key + " " + student.Value);
+//}
+
+//Console.WriteLine(students.GetHashCode());
+
+
+// NON-GENERIC COLLECTIONS
+
+//ARRAYLIST
+
+//ArrayList Cars = new ArrayList();
+//Cars.Add("Civic");
+//Cars.Add("Honda");
+//Cars.Add("Black");
+//Cars.Add(1800);
+//Cars.Add(.70f);
+//Cars.Add(true);
+
+//Console.WriteLine(Cars.Count);
+//Console.WriteLine(Cars.Contains("Boss"));
+//Cars.RemoveAt(3);
+
+//foreach (var Car in Cars)
+//{
+//    Console.WriteLine(Car);
+//}
+
+// String Methids
+
+//string test = """{ "name" : "John Dale"}""";
+//string test = "John Doe";
+
+//string test = "we are learning \"C#\"";
+
+//Console.WriteLine(test);
+//Console.Write(test.Replace("learning", "Mastering"));
+//Console.Write(test.Replace("C#", "Java"));
+
+// CODING BEST PRACTICES
+// Indentation (Readable by using spaces and new lines)
+//Comments
+//Meaningful Identifiers (Variables names) student -> std || x ->a,b,c
+//errors (exception handling)
+//less reaptation
+
+//OOP (Object Oriented Program)
+// it is an approch to code cleaner and better
+//Readable
+//Reuseable
+//Optimize
+//proper structure of the code is maintained.
+
+//Inheritance
+//1. Signle level inheritance Vehicle -> Car
+//2. Multi level inheritance Vehicle -> Car > ECar
+//3. Heirarchial level inheritance Vehicle -> Car
 
 
 
