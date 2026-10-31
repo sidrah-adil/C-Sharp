@@ -1,133 +1,127 @@
-// See information http://aka.ms/new-console-template for more
-// information
+﻿// See https://aka.ms/new-console-template for more information
+using System;
 using System.Collections;
-using System.ComponentModel.DataAnnotations;
 
 Console.WriteLine("Hello, World!");
+Console.WriteLine("C# FIRST CLASS");
 
-//DATA-TYPE
+//DATATYPES
 //string
-//string userName = "Sara";
-//char bloodGroup= 'A';
+string userName = "Muhammad Ahmed";
 
-//Console.WriteLine(userName + " " + bloodGroup);
-
+char alpha = 'Z';
 //numbers
+byte age = 23; //max number 255
 
-//int qaidiNo = 804;
+int number = 786;
 
-//long largeNum = 1234570255974582L;
+long largeNum = 1314352176234865698L;
 
-//float height = 5.11F;
+float height = 5.11F;
 
-//double dNum = 990.788D;
+double dNum = 990.786D;
 
-//decimal deceNum = 1573220.0564M;
+decimal deciNum = 770012.1562M;
 
-//boolean
+//Boolean
 
+bool isValid = false;
 
+//Console.WriteLine(userName + " " + "age: " + age + " lucky number: " + number + " char is: " + alpha + " has height: " + height + " has valid ID: " + isValid);
 
-//bool isValid= false;
+//Arithematic Operators
 
-//Arithematic Operator
-//Console.WriteLine(66 + 45 );
-//Console.WriteLine(66 - 45);
-//Console.WriteLine(66 * 45);
-//Console.WriteLine(66 / 45);
-//Console.WriteLine(66 % 45);
+//Console.WriteLine(90 + 30);
+//Console.WriteLine(90 - 30);
+//Console.WriteLine(90 * 30);
+//Console.WriteLine(90 / 30);
+//Console.WriteLine(90 % 30);
 
-//Console.Write(" ");
-////Assignment Operator
-//int num = 12;
+//Assignment Operator
 
-//Console.WriteLine(num +=4); //num + 4
-//Console.WriteLine(num -=4); //num - 4
-//Console.WriteLine(num *=4); //num * 4
-//Console.WriteLine(num /=4); //num / 4
-//Console.WriteLine(num %=4); //num % 4
+//int num = 11;
 
-// Comparison Operators
+//Console.WriteLine(num += 4); //num = num + 4
+//Console.WriteLine(num -= 4); //num = num - 4
+//Console.WriteLine(num *= 4); //num = num * 4
+//Console.WriteLine(num /= 4); //num = num / 4
+//Console.WriteLine(num %= 4); //num = num % 4
 
-//int a = 45; int b = 70;
+//Comparison Operators (True/ False)
 
-//Console.WriteLine(a == b);
-//Console.WriteLine(a != b);
-//Console.WriteLine(a >= b);
-//Console.WriteLine(a <= b);
-//Console.WriteLine(a < b);
-//Console.WriteLine(a > b);
+int a = 45; int b = 70;
 
-//Logical Operators (AND &&, OR ||, NOT ! )
-// AND 
-// T + T = T
-// T + F = F
-// F + T = F
-// F + F = F
+//Console.WriteLine(a == b); //F
+//Console.WriteLine(a != b); //T
+//Console.WriteLine(a > b); //F
+//Console.WriteLine(a < b); //T
+//Console.WriteLine(a >= b); //F
+//Console.WriteLine(a <= b); //T
 
-//Console.WriteLine(a <= b && a != b); //T
-//Console.WriteLine(a >= b && a != b); //F
+//Logical Operators(AND &&, OR ||, NOT !)
+//AND
+//T  T = T
+//T  F = F
+//F  T = F
+//F  F = F
+
+//Console.WriteLine(a <= b && a != b); //TRUE
+//Console.WriteLine(a >= b && a != b); //FALSE
 
 //OR
-// T + T = T
-// T + F = T
-// F + T = T
-// F + F = F
+//T  T = T
+//T  F = T
+//F  T = T
+//F  F = F
 
-//Console.WriteLine(a <= b || a != b); //T
-//Console.WriteLine(a >= b || a != b); //T
-//Console.WriteLine(a >= b || a == b); //F
+//Console.WriteLine(a <= b || a != b); //TRUE
+//Console.WriteLine(a >= b || a != b); //TRUE
+//Console.WriteLine(a >= b || a == b); //FALSE
+
 
 // NOT !
 
-//Console.WriteLine(a != b); //T
-//Console.WriteLine(!(a == b)); //T
-//Console.WriteLine(!(a != b)); //F
+//Console.WriteLine(!(a == b)); // FAlSE
+//Console.WriteLine(a != b); // TRUE
 
+// SALARY SYSTEM
+//Console.WriteLine("Enter Salary..");
 
-//SALARY SYSTEM
-//do
+//int salary = Int32.Parse(Console.ReadLine());
+
+//if (salary > 50000 && !(salary >= 80000))
 //{
-//    Console.WriteLine("Enter salary...");
+//    Console.WriteLine("Good salary...");
+//}
+//else if (salary < 50000)
+//{
+//    Console.WriteLine("Do you get fuel allowance?");
+//    string answer = Console.ReadLine();
 
-//    int salary = int.Parse(Console.ReadLine());
+//    answer = answer.ToLower();// yes  or y
 
-//    Console.WriteLine(salary);
-
-//    if (salary > 90000 && !(salary >= 120000))
+//    if (answer == "yes" || answer == "y")
 //    {
-//        Console.WriteLine("Good Salaray....");
+//        Console.WriteLine("Sounds Goood!!");
 //    }
-//    else if (salary < 90000)
+//    else if (answer == "no" || answer == "n")
 //    {
-//        Console.WriteLine("Do you get fuel allowance ?");
-//        string answer = Console.ReadLine();
-
-//        answer = answer.ToLower();
-
-//        if (answer == "yes" || answer == "y")
-//        {
-//            Console.WriteLine("Sounds Good");
-//        }
-//        else if (answer == "no" || answer == "n")
-//        {
-//            Console.WriteLine("Try to switch your job");
-//        }
-//        else
-//        {
-//            Console.WriteLine("Please enter yes or no");
-//        }
+//        Console.WriteLine("Try to switch your job ASAP!!");
 //    }
 //    else
 //    {
-//        Console.WriteLine("Mashallah!");
+//        Console.WriteLine("Please enter yes or no.");
 //    }
-//} while (true);
+//}
+//else
+//{
+//    Console.WriteLine("Great!! MASHALLAH");
+//}
 
 
-// SWITCH 1 = 7 // Monday == 1, Tuesday == 2
+//SWITCH 1 to 7 || 1==Monday   7==Sunday
 
-//Console.WriteLine("Enter you Num");
+//Console.WriteLine("Enter number between 1 to 7");
 //int num = Int32.Parse(Console.ReadLine());
 
 //switch (num)
@@ -154,32 +148,33 @@ Console.WriteLine("Hello, World!");
 //        Console.WriteLine("Sunday");
 //        break;
 //    default:
-//        Console.WriteLine("Invalid Num");
+//        Console.WriteLine("Invalid Number");
 //        break;
 //}
 
 
-// String Interpolation
+//sting interpolation
 
-//int twentythree = 23;
+//int six = 6;
 
-//Console.WriteLine($"Ahsan age is{twentythree}");
+//Console.WriteLine($"This is some number: {six * 2}");
 
-////For Loop
 
-//for ( int i = 0; i <= twentythree; i++)
+//Loops
+//for loop
+
+//for(int i = 0; i <= 70; i++)
 //{
 //    Console.WriteLine(i);
 //}
 
-//for( int i = 50; i >= 0; i--)
+//for(int i = 50; i >= 0; i--)
 //{
 //    Console.WriteLine(i);
 //}
 
-//ODD NUMBER
-
-//for (int i = 1; i <= 101; i++)
+//Odd Numbers
+//for(int i = 1; i <= 101; i++)
 //{
 //    if(i%2 != 0)
 //    {
@@ -187,147 +182,140 @@ Console.WriteLine("Hello, World!");
 //    }
 //}
 
-//EVEN NUMBER
+//PRIME NUMBER
 
-//for (int i = 1; i <= 101; i++)
+
+
+//WHILE Loop
+
+//int k = 23;
+
+//while(k < 23)
 //{
-//    if (i % 2 == 0)
-//    {
-//        Console.WriteLine(i);
-//    }
+//    Console.WriteLine(k);
+//    k++;
 //}
 
 
-//While Loop
-//while (twentythree < 25)
-//{
-//    Console.WriteLine(twentythree);
-//    twentythree++;
-//}
+//Do- While
 
-
-//Do-While Loop
 //int j = 10;
-
-//do {  Console.WriteLine("J");
+//do
+//{
+//    Console.WriteLine("J");
 //    j++;
-//}
-//while (j < 23);
+//} while (j < 23);
 
 
-// Even number
 //int num;
+
 //char ans;
 
 //do
 //{
-//    Console.WriteLine("Enter your Number");
+//    Console.WriteLine("Enter any number");
 //    num = Convert.ToInt32(Console.ReadLine());
 
 //    if (num % 2 == 0)
 //    {
 //        Console.WriteLine("Even Number");
 //    }
-//    else{
+//    else
+//    {
 //        Console.WriteLine("Odd Number");
 //    }
 
-//    Console.WriteLine("Do you want to continue? Press Y");
+//    Console.WriteLine("Do you want to continue?? Press Y");
 //    ans = Convert.ToChar(Console.ReadLine());
-//}while (ans == 'Y' || ans == 'y');
+//} while (ans == 'Y' || ans == 'y');
 
 
-// ARRAY FIXED SIZE
+// ARRAY FIXED SIZED
 
-//int[] tempreature = new int[6];
-//tempreature[0] = 20;
-//tempreature[1] = 35;
-//tempreature[2] = 40;
-//tempreature[3] = 25;
-//tempreature[4] = 32;
-//tempreature[5] = 16;
+//int[] temperatures = new int[5];
+////                          length
 
-//Console.WriteLine(tempreature[3]);
+//temperatures[0] = 43;
+//temperatures[1] = 40;
+//temperatures[2] = 13;
+//temperatures[3] = 23;
+//temperatures[4] = 33;
+////temperatures[5] = 60;
 
-//int[] itemPrice = [460, 885, 1150, 225, 550, 800, 750, 900];
+
+//Console.WriteLine(temperatures[4]);
+
+//int[] itemPrice = { 440, 60, 120, 770, 1200, 800 };
 
 //foreach (var item in itemPrice)
 //{
 //    Console.WriteLine(item);
 //}
 
-// ARRAY METHOD
 
-//string[] countries = ["Pak", "China", "Bag", "Iran", "Afg"];
+//string[] countries = { "Pak", "Ind", "Afg", "Iran", "Iraq", "China", "Pak", "America" };
 
 //Array.Sort(countries);
 //Array.Reverse(countries);
 
-//foreach (var country in countries)
-//{
+
+
+//foreach (var country in countries){ 
 //    Console.WriteLine(country);
 //}
+
 //Console.WriteLine(Array.IndexOf(countries, "China"));
 //Console.WriteLine(Array.LastIndexOf(countries, "Pak"));
 
 
-// 20-OCT-2026 TUESDAY
-
-
-// Multi-Dimentional Arrays
+//Multi Dimensional Arrays
 
 //int[,] multiArr =
 //{
-//    {56, 32 },
-//    {78, 46 },
-//    {22, 58 },
-//    {10, 98 },
-//    {54, 89 },
-//    {42, 39 },
-//    {70, 87 },
-//    {27, 44 },
+//    {23, 55},
+//   //00   01
+//    {27, 25},
+//  //10   11
+//    {25, 35},
+// //  20   21
+//    {24, 45},
+//    {21, 65},
+//    {20, 75},
 //};
 
-//Console.WriteLine(multiArr[5,0]);
+//Console.WriteLine(multiArr[1, 1]);
 
-//for (int i = 0; i < multiArr.GetLength(0); i++)
+
+//for(int i = 0; i < multiArr.GetLength(0); i++)
 //{
-//    for (int j = 0; j < multiArr.GetLength(1); j++)
+//    for(int j = 0; j < multiArr.GetLength(1); j++)
 //    {
-//        Console.WriteLine(multiArr[i, j] + " ");
+//        Console.WriteLine(multiArr[i, j]);
 //    }
 //}
 
-//C# Unintialized Variable bool = true, int = 0, str = 0 null by default
+//C# unintialized variables bool = true, int = 0, str = null default values
 
-//Math.power
+//Math.Power 
 
-//Console.WriteLine(Math.Pow(2, 3));
+//Console.WriteLine(Math.Pow(3,3));
+
 
 //Jagged Array
 //size of sub array is not fixed
 
+
 //string[][] skillSet =
 //{
-//    new string[6] {"HTML", "CSS", "JS", "BOOTSTRAP", "SEO", "UIUX"},
-//    new string[5] {"MYSQL", "PHP", "LARAVEL", "CMS", "FME"},
-//    new string[4]  {"SQL SERVER", "C#", "DOTNET", "Angular"},
-//    new string[3]  {"MongoDB", "ReactJS", "EXPRESSJS"},
-//    new string[2] {"DART", "FLUTTER" }
+//    new string[6] {"Html", "CSS", "JS", "Bootsrap", "SEO", "UIUX"},
+//    new string[5] {"Mysql", "PHP", "PJS", "LARAVEL", "FME"},
+//    new string[3] {"SQL Server", "C#", ".Net MVC"},
+//    new string[2] {"Dart", "Flutter"}
 //};
 
-//Console.WriteLine(skillSet[2][1]);
+//Console.WriteLine(skillSet[3][1]);
 
-// FOR EACH LOOP
-//foreach (var skills in skillSet)
-//{
-//    foreach(var skill in skills)
-//    {
-//        Console.WriteLine(skill);
-//    }
-//}
 
-//FOR LOOP
 //for(int i = 0; i < skillSet.Length; i++)
 //{
 //    for(int j = 0; j < skillSet[i].Length; j++)
@@ -336,345 +324,446 @@ Console.WriteLine("Hello, World!");
 //    }
 //}
 
+//foreach(var skills in skillSet)
+//{
+//    foreach (var skill in skills)
+//    {
+//        Console.WriteLine(skill);
+//    }
+//}
 
-//FUNCTIONS IN C#
-// REPEATED WORK CALL K LEYE ,
-// RETURN TYPE, funcName()  {body}
 
-//no return no parameter
+// FUNTIONS
+
+//return type funcName() {body}
+
+
+//No return no parameter
+
 //void Greet()
 //{
-//    Console.WriteLine("Good Afternoon");
+//    Console.WriteLine("Good Evening!");
 //}
 
-//calling
+////calling
+
+//Greet();
+//Greet();
 //Greet();
 
+//No return with parameter        NO RETURN==void
 
-//no return with parameter
 //void Greet(string name)
 //{
-//    Console.WriteLine($"Hi, {name}, Good Afternoon!");
+//    Console.WriteLine($"Hi {name}, Good Evening!");
 //}
 
-//calling
-//Greet("Saqib");
-//Greet("Ahmed");
+////calling
 
-// Return no parameter
+//Greet("Zunno");
+//Greet("Burney");
+//Greet("Saima");
+
+//return with no parameter
 
 //string Greet()
 //{
-//    return "Welcome to our Company!";
+//    return "Hey, Welcome to our company!";
 //}
-
-////calling
-//Console.WriteLine(Greet());
-
-
-// Return with parameter
-//string Greet(string name)
-//{
-//    return $"Welcome, {name} to our Company!";
-//}
-
-////calling
-//Console.WriteLine(Greet("Imran"));
-
-
-//return no paramter
 
 //int Add()
 //{
-//    return 32 + 52;
+//    return 32 + 45;
 //}
+
+
+//Console.WriteLine(Greet());
 //Console.WriteLine(Add());
 
-//return with paramter
+
+////return with parameter
 
 //string empDetails(string name, byte age)
 //{
-//    return ($"Employee name:, {name}. \nEmployee age: {age}");
+//    return ($"Emp Name: {name}. \nEmp Age: {age}");
 //}
 
-//Console.WriteLine(empDetails("Imran", 20));
+//Console.WriteLine(empDetails("Burney", 56));
 
-// DATATYPE STRUCTURES
-// COLLECTIONS
 
-//GENERIC COLLECTION = datatype zaror btani parti hai | Fixed DataType
+//DATA STRUCTURES
+//COLLECTIONS
 
+//Generic Collection == datatype zaroor batani he
 //LIST, STACK, QUEUE, Dictionary
 
-//LIST: ADD, AddRange, Contains,
-//Remove, RemoveRange, Count, 
+
+//LIST
+//Add
+//Remove
+//Contains
+//AddRange
+//RemoveRange
+
+
 
 //List<string> SuperCars = new List<string>();
+
+//SuperCars.Add("Bugatti");
 //SuperCars.Add("Supra");
-//SuperCars.Add("Mark X");
-//SuperCars.Add("BMW");
-//SuperCars.Add("Audi");
+//SuperCars.Add("Mazda Rx7");
+//SuperCars.Add("Ferrari");
+
 
 //List<string> Cars = new List<string>();
-//Cars.Add("Accord");
-//Cars.Add("City");
-//Cars.Add("Civic");
-//Cars.Add("Corolla");
-//Cars.Add("Cultus");
 
-//Console.WriteLine(Cars[4]);
-//Console.WriteLine(Cars.Count);
-//Console.WriteLine(Cars.Contains("Civic"));
-//Console.WriteLine(Cars.Remove("Cultus"));
+//Cars.Add("Haval"); //0
+//Cars.Add("BMW"); //1
+//Cars.Add("City"); //2
+//Cars.Add("Alto"); //3
+//Cars.Add("Cultus"); //4
 
-//Cars.RemoveAt(0);
-//Cars.Insert(3, "Boss");
+
+////Console.WriteLine(Cars.Count);
+////Console.WriteLine(Cars[0]);
+////Console.WriteLine(Cars[4]);
+////Console.WriteLine(Cars.Contains("BMW")); //T/F
+
+////Cars.RemoveAt(1);
+//Cars.Insert(3, "Carolla");
+
 //Cars.AddRange(SuperCars);
-//Cars.RemoveRange(1, 5);
+//Cars.RemoveRange(1, 5); //4
 
 
-//foreach (string Car in Cars)
+////Console.WriteLine(Cars[4]);
+
+//foreach (var car in Cars)
 //{
-//    Console.WriteLine(Car);
+//    Console.WriteLine(car);
 //}
 
+////foreach (var spcar in SuperCars)
+////{
+////    Console.WriteLine(spcar);
+////}
 
-// QUEUE (FIFO: First in first out)
-// ENQUEUE : Add / Insert 
+//QUEUE (FIFO: First In First Out)
+//Enqueue == Add
+//Dequeue == Remove
 
-//Queue<string> stdNames = new Queue<string>();
-//stdNames.Enqueue("Imran");
-//stdNames.Enqueue("Hunzila");
-//stdNames.Enqueue("Saqib");
-//stdNames.Enqueue("Ahmed");
-//stdNames.Enqueue("Rayyan");
-//stdNames.Enqueue("Ali");
-//stdNames.Enqueue("Nabeel");
 
-//// DEQUEUE: Remove / Delete
-//stdNames.Dequeue(); // delete 1 name Imran
-//stdNames.Dequeue(); // Hunzila
+//Queue<string> stdName = new Queue<string>();
 
-//foreach (var name in stdNames)
+//stdName.Enqueue("Burney");
+//stdName.Enqueue("Zunno");
+//stdName.Enqueue("Huzaifa");
+//stdName.Enqueue("FAtima");
+//stdName.Enqueue("Arham");
+
+
+////Remove == Dequeue
+//stdName.Dequeue(); //Burney
+//stdName.Dequeue(); //Zunno
+
+
+
+//foreach (var std in stdName)
 //{
-//    Console.WriteLine(name);
+//    Console.WriteLine(std);
 //}
 
-// STACK (LIFO: Last in first out)
-// PUSH : Add / Insert 
-
-//Stack<string> birds = new Stack<string>();
-//birds.Push("Electus");
-//birds.Push("Amazon");
-//birds.Push("Finch");
-//birds.Push("Maccow");
-//birds.Push("Love Birds");
+//STACK (LIFO: Last In First Out)
+//Push = Add
+//Pop = Remove
 
 
-//// POP: Remove / Delete
-//birds.Pop();// Love birds delete
 
-//foreach (var name in birds)
+//Stack<string> Birds = new Stack<string>();
+
+//Birds.Push("Electus");
+//Birds.Push("Amazon");
+//Birds.Push("Finch");
+//Birds.Push("Maccow");
+//Birds.Push("Australian");
+//Birds.Push("Love Bird Burney");
+
+
+//Birds.Pop(); //Love Bird Burney
+//Birds.Pop(); //Australian
+
+//foreach (var bird in Birds)
 //{
-//    Console.WriteLine(name);
+//    Console.WriteLine(bird);
 //}
 
-// Dictionary(key: value)
+//Dictionary(Generic Collection) (key: value)
 //add, remove
 
-//Dictionary<string, string> empDetails = new Dictionary
-//<string, string>();
+//Dictionary<string, string> employeeDetails = new Dictionary<string, string>();
 
-//empDetails.Add("empName", "Haris");
-//empDetails.Add("empDesignation", "DCAH");
-//empDetails.Add("empAddress", "Johar Khi");
-//empDetails.Add("empImg", "haris.jpg");
-//empDetails.Add("empEmail", "haris@aptechnorth.edu.pk");
-//empDetails.Add("empPass", "Haris7778");
+//employeeDetails.Add("empName", "Ashar");
+//employeeDetails.Add("empDesig", "React Developer");
+//employeeDetails.Add("empAddress", "North Khi");
+//employeeDetails.Add("empImg", "ashar.jpg");
+//employeeDetails.Add("empEmail", "ashar@gmail.com");
+//employeeDetails.Add("empPass", "KuyTasdbv1");
+////employeeDetails.Add("empSalary", 698745);
+////employeeDetails.Add("empIsValid", true);
 
-//Console.WriteLine(empDetails["empImg"]);
+//Dictionary<string, int> stdMarks = new Dictionary<string, int>();
 
-//short code see data 
-//foreach(var item in empDetails)
+//stdMarks.Add("Urdu", 70);
+//stdMarks.Add("Maths", 90);
+//stdMarks.Add("Physics", 87);
+
+
+//Console.WriteLine(employeeDetails["empName"]);
+
+//For Each Loop
+//foreach(var item in employeeDetails)
+//{
+//    string[] test = (item.ToString()).Split(',');
+//    //string key = test[0];
+//    //string value = test[1];
+//    string key = test[0].Trim('['); //[
+//    string value = test[1].Trim(']'); //]
+//    //Console.WriteLine(key);
+//    //Console.WriteLine(value);
+//    //Console.WriteLine(item);
+
+//    Console.WriteLine($"The employee has key propety:{key} and value property is:{value}");
+//    //Console.WriteLine(test[0]);
+//}
+
+
+//HashTables
+
+//Hashtable students = new Hashtable();
+//students.Add("stdname", "Abdullah");
+//students.Add("stdMarks", 98);
+//students.Add("stdExamStatus", true);
+//students.Add("stdImg", "abdullah.jpg");
+
+
+////Console.WriteLine(students["stdname"]);
+////students.Contains("stdMarks");
+////students.ContainsValue(98);
+
+//foreach(DictionaryEntry item in students)
 //{
 //    Console.WriteLine(item.Key + " : " + item.Value);
 //}
 
-// Long procees show data
-//foreach (var item in empDetails)
-//{
-//    string[] test = (item.ToString().Split(','));
-
-//    string key = test[0].Trim('[');
-//    string value = test[1].Trim(']');
-//    //string key = test[0];
-//    //string value = test[1];
-
-//    Console.WriteLine(key);
-//    Console.WriteLine(value);
-//    Console.WriteLine(item);
-
-//    Console.WriteLine($"The employee has key property: {key} and value property: {value}");
-//}
-
-//Dictionary<string, int> subDetails = new Dictionary
-//<string, int>();
-
-//subDetails.Add("Urdu", 90);
-//subDetails.Add("English", 75);
-//subDetails.Add("Maths", 88);
-//subDetails.Add("Science", 66);
-
-//foreach (var book in subDetails)
-//{
-//    Console.WriteLine(book.Key + " : " + book.Value);
-//}
-
-
-// HashTables
-
-//Hashtable students = new Hashtable();
-//students.Add("stdName", "Imran");
-//students.Add("stdMarks", 89);
-//students.Add("stdExamStatus", "Pass");
-//students.Add("stdImg", "imran.jpg");
-//students.Add("stdValid", true);
-
-//Console.WriteLine(students["stdName"]);
-//Console.WriteLine(students.Contains("stdMarks"));
-//Console.WriteLine(students.ContainsValue(89));
-
-//foreach (DictionaryEntry student in students)
-//{
-//    Console.WriteLine(student.Key + " " + student.Value);
-//}
-
 //Console.WriteLine(students.GetHashCode());
 
-
-// NON-GENERIC COLLECTIONS
-
-//ARRAYLIST
+//ArrayList (None-Generic Collection & No fix datatype)
 
 //ArrayList Cars = new ArrayList();
+//Cars.Add("Revo");
+//Cars.Add("Camery");
 //Cars.Add("Civic");
-//Cars.Add("Honda");
-//Cars.Add("Black");
-//Cars.Add(1800);
+//Cars.Add("Elantra");
+//Cars.Add("Mehran");                                                                   
+//Cars.Add(24007);
 //Cars.Add(.70f);
-//Cars.Add(true);
 
-//Console.WriteLine(Cars.Count);
-//Console.WriteLine(Cars.Contains("Boss"));
-//Cars.RemoveAt(3);
+////Console.WriteLine(Cars.Count);
+//Console.WriteLine(Cars.Contains("Mehran"));
+////Cars.RemoveAt(3);
+////Cars.Remove("Revo");
+//Cars.RemoveRange(5, 2);
 
-//foreach (var Car in Cars)
+
+
+//foreach(var car in Cars)
 //{
-//    Console.WriteLine(Car);
+//    Console.WriteLine(car);
 //}
 
-// String Methids
+//String Methods
 
-//string test = """{ "name" : "John Dale"}""";
+//string test = """{ "name": "John Doe"}""";
 //string test = "John Doe";
 
-//string test = "we are learning \"C#\"";
+//using System.Collections;
 
-//Console.WriteLine(test);
-//Console.Write(test.Replace("learning", "Mastering"));
-//Console.Write(test.Replace("C#", "Java"));
+//string test = "we are  Learnnig \"C#\"";
+////Console.WriteLine(test);
+////Console.WriteLine(test.Replace("Learnnig", "Mastering"));
+//Console.WriteLine(test.Replace("C#", "Java"));
 
-// CODING BEST PRACTICES
-// Indentation (Readable by using spaces and new lines)
-//Comments
-//Meaningful Identifiers (Variables names) student -> std || x ->a,b,c
-//errors (exception handling)
-//less reaptation
+string email = "hdkjhdkjhkhf";
+int stdage = 75;
 
-//OOP (Object Oriented Program)
-// it is an approch to code cleaner and better
-//Readable
-//Reuseable
-//Optimize
+//login start
+
+//login end
+
+
+//CODING Best Practices
+// Indentation (Readable by using spaces and new lines) 
+// Comments 
+// Meaningful identifiers (variable names)
+// errors (exception handling) 
+//less repeatation
+
+//OOP
+//Objects and Classes
+//OOP (OBJECT ORIENTED PROGRAMMING)
+//it is an approach to code cleaner and better.
+//readable
+//reusable
+//optimize
 //proper structure of the code is maintained.
 
-//Inheritance
-//1. Signle level inheritance Vehicle -> Car
-//2. Multi level inheritance Vehicle -> Car > ECar
-//3. Heirarchial level inheritance Vehicle -> Car, Vehicle -> Bike
-//4. Multiple Inheritance 
-//5. Hybird Inheritance Vehicle -> Car, Vehicle -> Car -> ECar, Car -> ECar
+//Main Pillars of OOP
+
+//1. Interitance
+// i . Single level inheritance  Vehicle -> Car
+// ii . Multi level inheritance  Vehicle -> Car -> Ecar
+// iii. Heirarchical inheritance Vehicle ->Car , Vehicle-> Bike
+// iv. Multiple inheritance  
+// v. Hybrid inheritance    Vehicle -> CAR , Vehicle -> Car -> Ecar, Car-> Ecar
+
+//2. Polymorphism(Poly: Many, morphism: forms)
+// Method Overloading
+// Method Overriding
+//3. Abstraction
+//4. Encapsulation
 
 
+//Aeroplane Boeing707 = new Aeroplane();//default constructor
 
-Aeroplane   Boeing707 = new Aeroplane();
-//ClassName //OBJName     //Constructor
 
-Boeing707.Name = "Boeing 707";
-Boeing707.takeOff();
-Console.WriteLine(Boeing707.AirLine);
+//Boeing707.Name = "Boeing 707";
+//Boeing707.takeOff();
+//Console.WriteLine(Boeing707.AirLine);
 
-Aeroplane f16 = new Aeroplane("PAF");
-f16.takeOff();
+//Aeroplane f16 = new Aeroplane("PAF");
+//f16.takeOff();
 
-Aeroplane f17 = new Aeroplane("PAF", "F-17 Thunder", 2, 2, "8500hp");
-f17.takeOff();
-f17.land();
+//Aeroplane f17 = new Aeroplane("PAF", "F-17 Thunder", 2, 2, "8500hp");
+//f17.takeOff();
+//f17.land();
 
-//class ClassName{
+//class ClassNamae{
 //default constructor
 //parametrized constructor
 //methods
 //}
 
-public class Aeroplane
-{
-    //access modifiers: public: access from anywhere, private: access within the class,
-    //protected: access within the class + child classes
-    public string? AirLine;
-    public string? Name;
-    public int Seats;
-    public int Crew;
-    public string? Power;
-
-    //Contstructor
-    public Aeroplane()
-    {
-        this.AirLine = "Not specified";
-        this.Name = "unknown";
-        this.Seats = 0;
-        this.Crew = 0;
-        this.Power = null;
-    }
-
-    public Aeroplane(string AirLine)
-    {
-        this.AirLine = AirLine;
-        this.Name = "unknown";
-        this.Seats = 0;
-        this.Crew = 0;
-        this.Power = null;
-    }
 
 
-    //    //Paremeterized constructor (Overloading)
-    public Aeroplane(string ALine, string name, int seat, int crew, string pow)
-    {
-        this.AirLine = ALine;
-        this.Name = name;
-        this.Seats = seat;
-        this.Crew = crew;
-        this.Power = pow;
-    }
-    // Method
-    public void takeOff()
-    {
-        Console.WriteLine($"{this.Name} is taking off. Best Wishes..!");
-    }
-    public void land()
-    {
-        Console.WriteLine($"{this.Name} is Landing at the 4th runway..! ");
-    }
-};
 
 
+
+//public class Aeroplane
+//{
+//    //access modifiers: public: access from anywhere, private: access within the class, protected: access within the class + child classes
+//    public string? AirLine;
+//    public string? Name;
+//    public int Seats;
+//    public int Crew;
+//    public string? Power;
+
+//    //Contstructor
+//    public Aeroplane()
+//    {
+//        this.AirLine = "Not specified";
+//        this.Name = "unknown";
+//        this.Seats = 0;
+//        this.Crew = 0;
+//        this.Power = null;
+//    }
+
+//    public Aeroplane(string AirLine)
+//    {
+//        this.AirLine = AirLine;
+//        this.Name = "unknown";
+//        this.Seats = 0;
+//        this.Crew = 0;
+//        this.Power = null;
+//    }
+
+
+//    //    //Paremeterized constructor (Overloading)
+//    public Aeroplane(string ALine, string name, int seat, int crew, string pow)
+//    {
+//        this.AirLine = ALine;
+//        this.Name = name;
+//        this.Seats = seat;
+//        this.Crew = crew;
+//        this.Power = pow;
+//    }
+//    public void takeOff()
+//    {
+//        Console.WriteLine($"{this.Name} is taking off. Best Wishes..!");
+//    }
+//    public void land()
+//    {
+//        Console.WriteLine($"{this.Name} is Landing at the 4th runway..! ");
+//    }
+
+//}
+
+//2. Polymorphism
+// Method Overloading
+// Method Overriding
+//3. Abstraction
+//4. Encapsulation
+
+//Inheritance
+//Vehicle abc = new Vehicle("AAZ-789", "Metallic grey");
+//abc.Run();
+
+//using System.Collections;
+//using System.Linq;
+
+//Car mercedez = new Car("TZ-8908", "Black", "Mercedez", "Benz C-Class", 20000000);
+//mercedez.Run();
+//mercedez.Run(500);
+
+//// Parent class | Base Class | Super Class
+//public class Vehicle
+//{
+//    public string regNo;
+//    public string color;
+
+//    public Vehicle(string regno, string color)
+//    {
+//        this.regNo = regno;
+//        this.color = color;
+//    }
+//    public void Run()
+//    {
+//        Console.WriteLine($"{this.regNo} vehicle started running");
+//    }
+//}
+//// Child class | Derived Class | Sub Class
+//public class Car : Vehicle
+//{
+
+//    public string brand;
+//    public string model;
+//    public int price;
+
+//    public Car(string regno, string color, string brand, string model, int price) : base(regno, color)
+//    {
+//        this.brand = brand;
+//        this.model = model;
+//        this.price = price;
+//    }
+
+//    //method overriding
+//    public void Run()
+//    {
+//        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running");
+//    }
+//    //method overloading
+//    public void Run(int speed)
+//    {
+//        Console.WriteLine($"{this.brand} {this.model} {this.regNo} started running at {speed} MPH.");
+//    }
+
+//}
