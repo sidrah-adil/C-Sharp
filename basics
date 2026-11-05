@@ -847,3 +847,107 @@ public class FullStackDeveloper : FrontEndDevelopment, BackEndDevelopment
 //1. Public     | anyone can access from any where in the program.
 //2. Private    | only owner class can access .
 //3. Protected  | only owner class and child class can access .
+
+//Products neckBand = new Products(1500, "lenevo Neckband", "good quality product with extra base and long range connectivity.");
+//neckBand.name = "lenevo Neckband";
+////neckBand.price;
+////neckBand.description;
+////Console.WriteLine(neckBand.price);
+
+////neckBand.ShowPrice();
+////neckBand.callShowPrice();
+
+//Gadgets iphone = new Gadgets(230000, "iphone 15 pro max", "great phone","Phones");
+//iphone.ShowGadgets();
+
+
+
+//public class Products
+//{
+//    public string name;
+//    private  int price;
+//    protected string description;
+
+//    // default constructor
+//    public Products(int price, string name, string description)
+//    {
+//        this.name = name;
+//        this.price = price;
+//        this.description = description;
+//    }
+
+//    private void showPrice()
+//    {
+//        Console.WriteLine(this.price);
+//    }
+//    public void callShowPrice()
+//    {
+//        this.showPrice();
+//    }
+//}
+
+//public class Gadgets : Products
+//{
+//    public string category;
+
+//    public Gadgets(int price, string name, string description, string category) : base(price, name, description)
+//    {
+//        this.category = category;
+//    }
+
+//    public void ShowGadgets()
+//    {
+//        Console.WriteLine(this.name);
+//        this.callShowPrice();
+//        Console.WriteLine(this.description); 
+//        Console.WriteLine(this.category);
+//    }
+//}
+
+// Delegates
+//normal delegates
+
+MyMaths.MyMathsDelegate Eval = new MyMaths.MyMathsDelegate(MyMaths.Add);
+Eval(5, 9); // 14
+
+// MultiCast Delegates
+
+MyMaths.MyMathsDelegate MultiEval;
+
+MultiEval = MyMaths.Mult;
+MultiEval(5, 9);// 45
+
+MultiEval = MyMaths.Div;
+MultiEval(2, 0); // cant divide by zero
+
+MultiEval = MyMaths.Sub;
+MultiEval(4, 2);
+
+
+public class MyMaths
+{
+    public delegate void MyMathsDelegate(double num1, double num2);
+
+    public static void Add(double a, double b)
+    {
+        Console.WriteLine(a + b);
+    }
+
+    public static void Sub(double a, double b)
+    {
+        Console.WriteLine(a - b);
+    }
+
+    public static void Mult(double a, double b)
+    {
+        Console.WriteLine(a * b);
+    }
+
+    public static void Div(double a, double b)
+    {
+        if(b !=0 ) Console.WriteLine(a / b);
+        else Console.WriteLine("Cant divide by zero");
+    }
+}
+
+
